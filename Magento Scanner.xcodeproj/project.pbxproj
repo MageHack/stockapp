@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40CBB4A160DDDA40032A073 /* MSStockTake.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB49160DDDA40032A073 /* MSStockTake.m */; };
+		A40CBB54160DE64D0032A073 /* MSUploadedStockTakesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB52160DE64D0032A073 /* MSUploadedStockTakesViewController.m */; };
+		A40CBB55160DE64D0032A073 /* MSUploadedStockTakesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40CBB53160DE64D0032A073 /* MSUploadedStockTakesViewController.xib */; };
+		A40CBB6A160DFDB00032A073 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB58160DFDB00032A073 /* AFHTTPClient.m */; };
+		A40CBB6B160DFDB00032A073 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB5A160DFDB00032A073 /* AFHTTPRequestOperation.m */; };
+		A40CBB6C160DFDB00032A073 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB5C160DFDB00032A073 /* AFImageRequestOperation.m */; };
+		A40CBB6D160DFDB00032A073 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB5E160DFDB00032A073 /* AFJSONRequestOperation.m */; };
+		A40CBB6E160DFDB00032A073 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB60160DFDB00032A073 /* AFNetworkActivityIndicatorManager.m */; };
+		A40CBB6F160DFDB00032A073 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB63160DFDB00032A073 /* AFPropertyListRequestOperation.m */; };
+		A40CBB70160DFDB00032A073 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB65160DFDB00032A073 /* AFURLConnectionOperation.m */; };
+		A40CBB71160DFDB00032A073 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB67160DFDB00032A073 /* AFXMLRequestOperation.m */; };
+		A40CBB72160DFDB00032A073 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB69160DFDB00032A073 /* UIImageView+AFNetworking.m */; };
+		A40CBB76160DFE3E0032A073 /* MSMagentoScannerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CBB75160DFE3E0032A073 /* MSMagentoScannerClient.m */; };
 		A4741A2A160DBCF300C44C75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A29160DBCF300C44C75 /* UIKit.framework */; };
 		A4741A2C160DBCF300C44C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A2B160DBCF300C44C75 /* Foundation.framework */; };
 		A4741A2E160DBCF300C44C75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A2D160DBCF300C44C75 /* CoreGraphics.framework */; };
@@ -16,9 +29,47 @@
 		A4741A3C160DBCF300C44C75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A3B160DBCF300C44C75 /* Default.png */; };
 		A4741A3E160DBCF300C44C75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A3D160DBCF300C44C75 /* Default@2x.png */; };
 		A4741A40160DBCF300C44C75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A3F160DBCF300C44C75 /* Default-568h@2x.png */; };
+		A4741A65160DBD3A00C44C75 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A5F160DBD3A00C44C75 /* libzbar.a */; };
+		A4741A66160DBD3A00C44C75 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A61160DBD3A00C44C75 /* zbar-back.png */; };
+		A4741A67160DBD3A00C44C75 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = A4741A62160DBD3A00C44C75 /* zbar-help.html */; };
+		A4741A68160DBD3A00C44C75 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A63160DBD3A00C44C75 /* zbar-helpicons.png */; };
+		A4741A69160DBD3A00C44C75 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = A4741A64160DBD3A00C44C75 /* zbar-samples.png */; };
+		A4741A6B160DBD4C00C44C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A6A160DBD4C00C44C75 /* AVFoundation.framework */; };
+		A4741A6D160DBD5800C44C75 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A6C160DBD5800C44C75 /* CoreMedia.framework */; };
+		A4741A6F160DBD6000C44C75 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A6E160DBD6000C44C75 /* CoreVideo.framework */; };
+		A4741A71160DBD6B00C44C75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A70160DBD6B00C44C75 /* QuartzCore.framework */; };
+		A4741A73160DBD7A00C44C75 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4741A72160DBD7A00C44C75 /* libiconv.dylib */; };
+		A4741A7D160DC01500C44C75 /* MSScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4741A7B160DC01500C44C75 /* MSScannerViewController.m */; };
+		A4741A7E160DC01500C44C75 /* MSScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4741A7C160DC01500C44C75 /* MSScannerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40CBB48160DDDA40032A073 /* MSStockTake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStockTake.h; sourceTree = "<group>"; };
+		A40CBB49160DDDA40032A073 /* MSStockTake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStockTake.m; sourceTree = "<group>"; };
+		A40CBB51160DE64D0032A073 /* MSUploadedStockTakesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUploadedStockTakesViewController.h; sourceTree = "<group>"; };
+		A40CBB52160DE64D0032A073 /* MSUploadedStockTakesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUploadedStockTakesViewController.m; sourceTree = "<group>"; };
+		A40CBB53160DE64D0032A073 /* MSUploadedStockTakesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUploadedStockTakesViewController.xib; sourceTree = "<group>"; };
+		A40CBB57160DFDB00032A073 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		A40CBB58160DFDB00032A073 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		A40CBB59160DFDB00032A073 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		A40CBB5A160DFDB00032A073 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		A40CBB5B160DFDB00032A073 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		A40CBB5C160DFDB00032A073 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		A40CBB5D160DFDB00032A073 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		A40CBB5E160DFDB00032A073 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		A40CBB5F160DFDB00032A073 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		A40CBB60160DFDB00032A073 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		A40CBB61160DFDB00032A073 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		A40CBB62160DFDB00032A073 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		A40CBB63160DFDB00032A073 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		A40CBB64160DFDB00032A073 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A40CBB65160DFDB00032A073 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A40CBB66160DFDB00032A073 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		A40CBB67160DFDB00032A073 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		A40CBB68160DFDB00032A073 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		A40CBB69160DFDB00032A073 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		A40CBB74160DFE3E0032A073 /* MSMagentoScannerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMagentoScannerClient.h; sourceTree = "<group>"; };
+		A40CBB75160DFE3E0032A073 /* MSMagentoScannerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMagentoScannerClient.m; sourceTree = "<group>"; };
 		A4741A25160DBCF300C44C75 /* Magento Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magento Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4741A29160DBCF300C44C75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4741A2B160DBCF300C44C75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +83,39 @@
 		A4741A3B160DBCF300C44C75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4741A3D160DBCF300C44C75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A4741A3F160DBCF300C44C75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4741A4B160DBD3A00C44C75 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		A4741A4C160DBD3A00C44C75 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		A4741A4D160DBD3A00C44C75 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		A4741A4E160DBD3A00C44C75 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		A4741A4F160DBD3A00C44C75 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		A4741A50160DBD3A00C44C75 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		A4741A51160DBD3A00C44C75 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		A4741A52160DBD3A00C44C75 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		A4741A53160DBD3A00C44C75 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		A4741A54160DBD3A00C44C75 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		A4741A55160DBD3A00C44C75 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		A4741A56160DBD3A00C44C75 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		A4741A57160DBD3A00C44C75 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		A4741A58160DBD3A00C44C75 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		A4741A59160DBD3A00C44C75 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		A4741A5A160DBD3A00C44C75 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		A4741A5B160DBD3A00C44C75 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		A4741A5C160DBD3A00C44C75 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		A4741A5D160DBD3A00C44C75 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		A4741A5E160DBD3A00C44C75 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		A4741A5F160DBD3A00C44C75 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		A4741A61160DBD3A00C44C75 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		A4741A62160DBD3A00C44C75 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		A4741A63160DBD3A00C44C75 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		A4741A64160DBD3A00C44C75 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		A4741A6A160DBD4C00C44C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A4741A6C160DBD5800C44C75 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A4741A6E160DBD6000C44C75 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A4741A70160DBD6B00C44C75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A4741A72160DBD7A00C44C75 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		A4741A7A160DC01500C44C75 /* MSScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSScannerViewController.h; sourceTree = "<group>"; };
+		A4741A7B160DC01500C44C75 /* MSScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSScannerViewController.m; sourceTree = "<group>"; };
+		A4741A7C160DC01500C44C75 /* MSScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSScannerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,15 +123,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4741A73160DBD7A00C44C75 /* libiconv.dylib in Frameworks */,
+				A4741A71160DBD6B00C44C75 /* QuartzCore.framework in Frameworks */,
+				A4741A6F160DBD6000C44C75 /* CoreVideo.framework in Frameworks */,
+				A4741A6D160DBD5800C44C75 /* CoreMedia.framework in Frameworks */,
+				A4741A6B160DBD4C00C44C75 /* AVFoundation.framework in Frameworks */,
 				A4741A2A160DBCF300C44C75 /* UIKit.framework in Frameworks */,
 				A4741A2C160DBCF300C44C75 /* Foundation.framework in Frameworks */,
 				A4741A2E160DBCF300C44C75 /* CoreGraphics.framework in Frameworks */,
+				A4741A65160DBD3A00C44C75 /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40CBB45160DDD8A0032A073 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB47160DDD920032A073 /* Stock Take */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A40CBB47160DDD920032A073 /* Stock Take */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB48160DDDA40032A073 /* MSStockTake.h */,
+				A40CBB49160DDDA40032A073 /* MSStockTake.m */,
+			);
+			name = "Stock Take";
+			sourceTree = "<group>";
+		};
+		A40CBB50160DE6250032A073 /* Upload Stock Takes */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB51160DE64D0032A073 /* MSUploadedStockTakesViewController.h */,
+				A40CBB52160DE64D0032A073 /* MSUploadedStockTakesViewController.m */,
+				A40CBB53160DE64D0032A073 /* MSUploadedStockTakesViewController.xib */,
+			);
+			name = "Upload Stock Takes";
+			sourceTree = "<group>";
+		};
+		A40CBB56160DFDB00032A073 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB57160DFDB00032A073 /* AFHTTPClient.h */,
+				A40CBB58160DFDB00032A073 /* AFHTTPClient.m */,
+				A40CBB59160DFDB00032A073 /* AFHTTPRequestOperation.h */,
+				A40CBB5A160DFDB00032A073 /* AFHTTPRequestOperation.m */,
+				A40CBB5B160DFDB00032A073 /* AFImageRequestOperation.h */,
+				A40CBB5C160DFDB00032A073 /* AFImageRequestOperation.m */,
+				A40CBB5D160DFDB00032A073 /* AFJSONRequestOperation.h */,
+				A40CBB5E160DFDB00032A073 /* AFJSONRequestOperation.m */,
+				A40CBB5F160DFDB00032A073 /* AFNetworkActivityIndicatorManager.h */,
+				A40CBB60160DFDB00032A073 /* AFNetworkActivityIndicatorManager.m */,
+				A40CBB61160DFDB00032A073 /* AFNetworking.h */,
+				A40CBB62160DFDB00032A073 /* AFPropertyListRequestOperation.h */,
+				A40CBB63160DFDB00032A073 /* AFPropertyListRequestOperation.m */,
+				A40CBB64160DFDB00032A073 /* AFURLConnectionOperation.h */,
+				A40CBB65160DFDB00032A073 /* AFURLConnectionOperation.m */,
+				A40CBB66160DFDB00032A073 /* AFXMLRequestOperation.h */,
+				A40CBB67160DFDB00032A073 /* AFXMLRequestOperation.m */,
+				A40CBB68160DFDB00032A073 /* UIImageView+AFNetworking.h */,
+				A40CBB69160DFDB00032A073 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A40CBB73160DFDEA0032A073 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB74160DFE3E0032A073 /* MSMagentoScannerClient.h */,
+				A40CBB75160DFE3E0032A073 /* MSMagentoScannerClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		A4741A1A160DBCF300C44C75 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +220,11 @@
 		A4741A28160DBCF300C44C75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4741A72160DBD7A00C44C75 /* libiconv.dylib */,
+				A4741A70160DBD6B00C44C75 /* QuartzCore.framework */,
+				A4741A6E160DBD6000C44C75 /* CoreVideo.framework */,
+				A4741A6C160DBD5800C44C75 /* CoreMedia.framework */,
+				A4741A6A160DBD4C00C44C75 /* AVFoundation.framework */,
 				A4741A29160DBCF300C44C75 /* UIKit.framework */,
 				A4741A2B160DBCF300C44C75 /* Foundation.framework */,
 				A4741A2D160DBCF300C44C75 /* CoreGraphics.framework */,
@@ -80,6 +237,10 @@
 			children = (
 				A4741A38160DBCF300C44C75 /* MSAppDelegate.h */,
 				A4741A39160DBCF300C44C75 /* MSAppDelegate.m */,
+				A4741A78160DBF7B00C44C75 /* View Controllers */,
+				A40CBB45160DDD8A0032A073 /* Models */,
+				A40CBB73160DFDEA0032A073 /* Networking */,
+				A4741A46160DBD2600C44C75 /* Vendor */,
 				A4741A30160DBCF300C44C75 /* Supporting Files */,
 			);
 			path = "Magento Scanner";
@@ -97,6 +258,98 @@
 				A4741A3F160DBCF300C44C75 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4741A46160DBD2600C44C75 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A40CBB56160DFDB00032A073 /* AFNetworking */,
+				A4741A47160DBD3A00C44C75 /* ZBarSDK */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A4741A47160DBD3A00C44C75 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A48160DBD3A00C44C75 /* Headers */,
+				A4741A5F160DBD3A00C44C75 /* libzbar.a */,
+				A4741A60160DBD3A00C44C75 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		A4741A48160DBD3A00C44C75 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A49160DBD3A00C44C75 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A4741A49160DBD3A00C44C75 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A4A160DBD3A00C44C75 /* zbar */,
+				A4741A54160DBD3A00C44C75 /* zbar.h */,
+				A4741A55160DBD3A00C44C75 /* ZBarCameraSimulator.h */,
+				A4741A56160DBD3A00C44C75 /* ZBarCaptureReader.h */,
+				A4741A57160DBD3A00C44C75 /* ZBarHelpController.h */,
+				A4741A58160DBD3A00C44C75 /* ZBarImage.h */,
+				A4741A59160DBD3A00C44C75 /* ZBarImageScanner.h */,
+				A4741A5A160DBD3A00C44C75 /* ZBarReaderController.h */,
+				A4741A5B160DBD3A00C44C75 /* ZBarReaderView.h */,
+				A4741A5C160DBD3A00C44C75 /* ZBarReaderViewController.h */,
+				A4741A5D160DBD3A00C44C75 /* ZBarSDK.h */,
+				A4741A5E160DBD3A00C44C75 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		A4741A4A160DBD3A00C44C75 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A4B160DBD3A00C44C75 /* Decoder.h */,
+				A4741A4C160DBD3A00C44C75 /* Exception.h */,
+				A4741A4D160DBD3A00C44C75 /* Image.h */,
+				A4741A4E160DBD3A00C44C75 /* ImageScanner.h */,
+				A4741A4F160DBD3A00C44C75 /* Processor.h */,
+				A4741A50160DBD3A00C44C75 /* Scanner.h */,
+				A4741A51160DBD3A00C44C75 /* Symbol.h */,
+				A4741A52160DBD3A00C44C75 /* Video.h */,
+				A4741A53160DBD3A00C44C75 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		A4741A60160DBD3A00C44C75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A61160DBD3A00C44C75 /* zbar-back.png */,
+				A4741A62160DBD3A00C44C75 /* zbar-help.html */,
+				A4741A63160DBD3A00C44C75 /* zbar-helpicons.png */,
+				A4741A64160DBD3A00C44C75 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4741A78160DBF7B00C44C75 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A79160DBF8700C44C75 /* Scan Bar Codes */,
+				A40CBB50160DE6250032A073 /* Upload Stock Takes */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A4741A79160DBF8700C44C75 /* Scan Bar Codes */ = {
+			isa = PBXGroup;
+			children = (
+				A4741A7A160DC01500C44C75 /* MSScannerViewController.h */,
+				A4741A7B160DC01500C44C75 /* MSScannerViewController.m */,
+				A4741A7C160DC01500C44C75 /* MSScannerViewController.xib */,
+			);
+			name = "Scan Bar Codes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +408,12 @@
 				A4741A3C160DBCF300C44C75 /* Default.png in Resources */,
 				A4741A3E160DBCF300C44C75 /* Default@2x.png in Resources */,
 				A4741A40160DBCF300C44C75 /* Default-568h@2x.png in Resources */,
+				A4741A66160DBD3A00C44C75 /* zbar-back.png in Resources */,
+				A4741A67160DBD3A00C44C75 /* zbar-help.html in Resources */,
+				A4741A68160DBD3A00C44C75 /* zbar-helpicons.png in Resources */,
+				A4741A69160DBD3A00C44C75 /* zbar-samples.png in Resources */,
+				A4741A7E160DC01500C44C75 /* MSScannerViewController.xib in Resources */,
+				A40CBB55160DE64D0032A073 /* MSUploadedStockTakesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +426,19 @@
 			files = (
 				A4741A36160DBCF300C44C75 /* main.m in Sources */,
 				A4741A3A160DBCF300C44C75 /* MSAppDelegate.m in Sources */,
+				A4741A7D160DC01500C44C75 /* MSScannerViewController.m in Sources */,
+				A40CBB4A160DDDA40032A073 /* MSStockTake.m in Sources */,
+				A40CBB54160DE64D0032A073 /* MSUploadedStockTakesViewController.m in Sources */,
+				A40CBB6A160DFDB00032A073 /* AFHTTPClient.m in Sources */,
+				A40CBB6B160DFDB00032A073 /* AFHTTPRequestOperation.m in Sources */,
+				A40CBB6C160DFDB00032A073 /* AFImageRequestOperation.m in Sources */,
+				A40CBB6D160DFDB00032A073 /* AFJSONRequestOperation.m in Sources */,
+				A40CBB6E160DFDB00032A073 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				A40CBB6F160DFDB00032A073 /* AFPropertyListRequestOperation.m in Sources */,
+				A40CBB70160DFDB00032A073 /* AFURLConnectionOperation.m in Sources */,
+				A40CBB71160DFDB00032A073 /* AFXMLRequestOperation.m in Sources */,
+				A40CBB72160DFDB00032A073 /* UIImageView+AFNetworking.m in Sources */,
+				A40CBB76160DFE3E0032A073 /* MSMagentoScannerClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +511,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Magento Scanner/Magento Scanner-Prefix.pch";
 				INFOPLIST_FILE = "Magento Scanner/Magento Scanner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Magento Scanner/ZBarSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -250,7 +527,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Magento Scanner/Magento Scanner-Prefix.pch";
 				INFOPLIST_FILE = "Magento Scanner/Magento Scanner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Magento Scanner/ZBarSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +556,7 @@
 				A4741A45160DBCF300C44C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

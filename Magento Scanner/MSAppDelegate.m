@@ -7,15 +7,22 @@
 //
 
 #import "MSAppDelegate.h"
+#import "MSScannerViewController.h"
+
 
 @implementation MSAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    MSScannerViewController *scannerViewController = [[MSScannerViewController alloc] initWithNibName:kMSScannerViewControllerXibName bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:scannerViewController];
+    
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
