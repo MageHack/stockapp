@@ -74,7 +74,7 @@ static NSInteger const kMSAmountAlertViewTag = 1111;
     self.cameraSession = [self buildCaptureSession];
     [self.cameraSession startRunning];
     
-    self.captureImageTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(processCameraImage:) userInfo:nil repeats:YES];
+    self.captureImageTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(processCameraImage:) userInfo:nil repeats:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
