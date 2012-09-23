@@ -27,7 +27,8 @@
 - (AVCaptureSession *)buildCaptureSession;
 - (void)showEnterAmountAlert;
 - (void)processCameraImage:(id)sender;
-- (void)doneButtonTapped:(id)sender;
+- (void)userTappedScreen:(UIGestureRecognizer *)gesture;
+- (void)userSwippedScreen:(UIGestureRecognizer *)gesture;
 
 @end
 
@@ -57,14 +58,21 @@ static NSInteger const kMSAmountAlertViewTag = 1111;
     [super viewDidLoad];
     
     self.title = @"Magento Scanner";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonTapped:)];
     
     self.stockTakes = [NSMutableArray array];
+    
+    UITapGestureRecognizer *tapGestureRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userTappedScreen:)];
+    [self.cameraPreviewView addGestureRecognizer:tapGestureRecogniser];
+    
+    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(userSwippedScreen:)];
+    swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeGesture];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -91,11 +99,33 @@ static NSInteger const kMSAmountAlertViewTag = 1111;
 
 #pragma mark - Actions
 
-- (void)doneButtonTapped:(id)sender {
+- (void)userSwippedScreen:(UIGestureRecognizer *)gesture {
     
-    MSUploadedStockTakesViewController *uploadedStockTakesViewController = [[MSUploadedStockTakesViewController alloc] initWithNibName:kMSUploadedStockTakesViewControllerXibName bundle:nil];
-    uploadedStockTakesViewController.stockTakes = self.stockTakes;
-    [self.navigationController pushViewController:uploadedStockTakesViewController animated:YES];
+    if (gesture.state == UIGestureRecognizerStateEnded) {
+        
+        MSUploadedStockTakesViewController *uploadedStockTakesViewController = [[MSUploadedStockTakesViewController alloc] initWithNibName:kMSUploadedStockTakesViewControllerXibName bundle:nil];
+        uploadedStockTakesViewController.stockTakes = self.stockTakes;
+        [self.navigationController pushViewController:uploadedStockTakesViewController animated:YES];
+    }
+}
+
+- (void)userTappedScreen:(UIGestureRecognizer *)gesture {
+    
+    if (gesture.state == UIGestureRecognizerStateEnded) {
+        
+        // Not working right now :(
+//        CGPoint location = [gesture locationInView:self.cameraPreviewView];
+//        
+//        AVCaptureDeviceInput *captureInput = [self.cameraSession.inputs objectAtIndex:0];
+//        AVCaptureDevice *device = captureInput.device;
+//
+//        [device lockForConfiguration:nil];
+//        
+//        [device setFocusPointOfInterest:location];
+//        [device setFocusMode:AVCaptureFocusModeAutoFocus];
+//        
+//        [device unlockForConfiguration];
+    }
 }
 
 - (void)showEnterAmountAlert {

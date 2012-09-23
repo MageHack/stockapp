@@ -524,6 +524,7 @@
 		A4741A45160DBCF300C44C75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Riot LTD";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Magento Scanner/Magento Scanner-Prefix.pch";
 				INFOPLIST_FILE = "Magento Scanner/Magento Scanner-Info.plist";
@@ -532,6 +533,7 @@
 					"\"$(SRCROOT)/Magento Scanner/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B355005-228C-4D7C-840A-2E6ADA2C1DAB";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

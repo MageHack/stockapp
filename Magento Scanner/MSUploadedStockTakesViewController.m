@@ -40,6 +40,12 @@ NSString *const kMSUploadedStockTakesViewControllerXibName = @"MSUploadedStockTa
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
