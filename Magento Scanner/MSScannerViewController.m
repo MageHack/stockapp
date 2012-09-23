@@ -161,6 +161,15 @@ static NSInteger const kMSAmountAlertViewTag = 1111;
     }
     
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+                
+        if (error) {
+            
+            [self.cameraSession stopRunning];
+            self.cameraSession = [self buildCaptureSession];
+            [self.cameraSession startRunning];
+            
+            return;
+        }
         
         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
         UIImage *image = [UIImage imageWithData:imageData];
